@@ -1,30 +1,15 @@
-<script>
-	export let name;
+<script lang="ts">
+    import ColumnChart from "./ColumnChart.svelte";
+
+    let items = [54, 55, 97, 55, 87, 30, 44, 11, 22]
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+    <ColumnChart items="{items}" gap={5} xOffsets="{[7,0,-7,7,0,-7,7,0,-7]}"
+                 columnColors={ ["red", "orange", "blue", "red", "orange", "blue", "red", "orange", "blue"]}
+                 xLabels={[null,"Jan",null,false,"Feb",false,false,"Mar",false]}/>
+    <ColumnChart items={[345,399,224,200,454,40,477]} fill="darkgreen"
+                 xLabels={["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]}
+                 max={500}
+                 yLabels={[0,50,100,150,200,250,300,350,400,450,500]} formatter={(x) => `${x}cm`} width="460"/>
 </main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
