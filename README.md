@@ -2,10 +2,13 @@ Meow-charts
 ----
 An easy-to-use charting library for Svelte applications.
 
+## How to use
+
+Copy any `.svelte` components inside `/src` to your project.
+
 ## Column chart example
 
-```sveltehtml
-
+```
 <ColumnChart items={[45,61,33,75,11,55,98]}
              fill="blue"
              xLabels={["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]}
