@@ -18,6 +18,8 @@ columnColors={["red","orange","pink","purple","yellow","darkred","brown"]}
 width="100%" height="100%"/>
 ```
 
+![example](screenshot01.png)
+
 ## TODOS:
 
 - Grouped/Stacked column chart.
