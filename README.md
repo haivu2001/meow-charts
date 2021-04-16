@@ -17,3 +17,10 @@ Copy any `.svelte` components inside `/src` to your project.
 columnColors={["red","orange","pink","purple","yellow","darkred","brown"]}
 width="100%" height="100%"/>
 ```
+
+## TODOS:
+
+- Grouped/Stacked column chart.
+- Radar/Polar chart.
+- Combo chart.
+- Bar chart.
